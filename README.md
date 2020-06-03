@@ -6,39 +6,17 @@ Pang Jing Hui | P1845259
 | No. | HTTP Method  | Route | Description |
 | ------------- | ------------- | ------------- | ------------- |
 | 1. | GET | api/Values | Return a string message, "Hello, {userName}." |
-| 2. | GET | api/Account/UserInfo | Retrieve all the data.  |
-| 3. | GET | api/v3/products  | Retrieve all the data.  |
-
-
-POST api/Account/Logout	
-No documentation available.
-
-GET api/Account/ManageInfo?returnUrl={returnUrl}&generateState={generateState}	
-No documentation available.
-
-POST api/Account/ChangePassword	
-No documentation available.
-
-POST api/Account/SetPassword	
-No documentation available.
-
-POST api/Account/AddExternalLogin	
-No documentation available.
-
-POST api/Account/RemoveLogin	
-No documentation available.
-
-GET api/Account/ExternalLogin?provider={provider}&error={error}	
-No documentation available.
-
-GET api/Account/ExternalLogins?returnUrl={returnUrl}&generateState={generateState}	
-No documentation available.
-
-POST api/Account/Register	
-No documentation available.
-
-POST api/Account/RegisterExternal	
-No documentation available.
+| 2. | GET | api/Account/UserInfo |  |
+| 3. | POST | api/Account/Logout	|  |
+| 4. | GET | api/Account/ManageInfo?returnUrl={returnUrl}&generateState={generateState} |  |
+| 5. | POST | api/Account/ChangePassword |  |
+| 6. | POST | api/Account/SetPassword |  |
+| 7. | POST | api/Account/AddExternalLogin |  |
+| 8. | POST | api/Account/RemoveLogin |  |
+| 9. | GET | api/Account/ExternalLogin?provider={provider}&error={error} |  |
+| 10. | GET | api/Account/ExternalLogins?returnUrl={returnUrl}&generateState={generateState} |  |
+| 11. | POST | api/Account/Register |  |
+| 12. | POST | api/Account/RegisterExternal |  |
 
 ## Postman testing
 
