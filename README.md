@@ -5,10 +5,40 @@ Pang Jing Hui | P1845259
 ## Web API Document
 | No. | HTTP Method  | Route | Description |
 | ------------- | ------------- | ------------- | ------------- |
-| 1. | GET  | api/Values | Retrieve all the data.  |
-| 1. | GET  | api/v3/products  | Retrieve all the data.  |
-| 1. | GET  | api/v3/products  | Retrieve all the data.  |
+| 1. | GET | api/Values | Return a string message, "Hello, {userName}." |
+| 2. | GET | api/Account/UserInfo | Retrieve all the data.  |
+| 3. | GET | api/v3/products  | Retrieve all the data.  |
 
+
+POST api/Account/Logout	
+No documentation available.
+
+GET api/Account/ManageInfo?returnUrl={returnUrl}&generateState={generateState}	
+No documentation available.
+
+POST api/Account/ChangePassword	
+No documentation available.
+
+POST api/Account/SetPassword	
+No documentation available.
+
+POST api/Account/AddExternalLogin	
+No documentation available.
+
+POST api/Account/RemoveLogin	
+No documentation available.
+
+GET api/Account/ExternalLogin?provider={provider}&error={error}	
+No documentation available.
+
+GET api/Account/ExternalLogins?returnUrl={returnUrl}&generateState={generateState}	
+No documentation available.
+
+POST api/Account/Register	
+No documentation available.
+
+POST api/Account/RegisterExternal	
+No documentation available.
 
 ## Postman testing
 
