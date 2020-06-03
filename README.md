@@ -14,7 +14,7 @@ Pang Jing Hui | P1845259
 
 
 
-# NOTES:
+# Note for myself:
 #### AccountController
 Provides a Web API endpoint for managing user accounts. The Register action is the only one that we used in this tutorial. Other methods on the class support password reset, social logins, and other functionality.
 #### ApplicationUser
