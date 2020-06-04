@@ -22,6 +22,15 @@ Pang Jing Hui | P1845259
 ### Register a user account:
 ![](images/reg.png)
 
+### User account in local database:
+![](images/db.png)
+
+### Login into a user account:
+![](images/log.png)
+
+### Call API:
+![](images/call.png)
+
 
 
 ## Postman testing
