@@ -19,6 +19,7 @@ Pang Jing Hui | P1845259
 | 12. | POST | api/Account/RegisterExternal | Register a user account with external credentials. |
 
 ## Postman testing
+![](images/reg.png)
 
 
 
