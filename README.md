@@ -45,3 +45,6 @@ Defined in /Models/IdentityModels.cs. This class is the EF model for user accoun
 Defined in /App_Start/IdentityConfig.cs This class derives from UserManager and performs operations on user accounts, such as creating a new user, verifying passwords, and so forth, and automatically persists changes to the database.
 #### ApplicationOAuthProvider
 This object plugs into the OWIN middleware, and processes events raised by the middleware. It derives from OAuthAuthorizationServerProvider.
+
+#References:
+https://www.youtube.com/watch?v=tbvxFW4UJdU
