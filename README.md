@@ -34,6 +34,17 @@ Pang Jing Hui | P1845259
 
 
 ## Postman testing
+### Call API without Token:
+![](images/p1.png)
+If you try to call the api without the token of a user account, access will be denied.
+
+### Get Token from a user account:
+![](images/p2.png)
+The access_token and token_type are the required values to process authorization.
+
+### Call API with Token:
+![](images/p2.png)
+KEY = Authorization, VALUE = "token_type" + " " + "access_token"
 
 
 # Note for myself:
