@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -13,6 +14,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
+using Newtonsoft.Json.Linq;
 using Task3.Models;
 using Task3.Providers;
 using Task3.Results;
@@ -323,6 +325,15 @@ namespace Task3.Controllers
         [Route("Register")]
         public async Task<IHttpActionResult> Register(RegisterBindingModel model)
         {
+            // Validate Google recaptcha
+            //var response = Request["g-recaptcha-response"];
+            //string secretKey = "6LfLlQAVAAAAAE6TsSbSxq_eGqTifNXjKMCyoGSf";
+            //var client = new WebClient();
+            //var rResult = client
+            //    .DownloadString(string.Format("https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}", secretKey, response));
+            //var obj = JObject.Parse(rResult);
+            //var status = (bool)obj.SelectToken("success");
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);

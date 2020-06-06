@@ -60,13 +60,12 @@
     self.register = function () {
         self.result('');
         self.errors.removeAll();
-
+        
         var data = {
             Email: self.registerEmail(),
             Password: self.registerPassword(),
             ConfirmPassword: self.registerPassword2()
         };
-
         $.ajax({
             type: 'POST',
             url: '/api/Account/Register',
@@ -75,6 +74,7 @@
         }).done(function (data) {
             self.result("Done!");
         }).fail(showError);
+
     }
 
     self.login = function () {
