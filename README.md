@@ -47,10 +47,11 @@ The access_token and token_type are the required values to proceed authorization
 KEY = Authorization, VALUE = "token_type" + " " + "access_token"
 
 # Sequence Diagrams
+![](images/sd.jpeg)
+Example: The user is trying to login with name and password. The website sends these user credentials to the authorization server. The authorization server authenticates the credentials and returns an access token. To access a protected resource, the browser includes the access token in the Authorization header of the HTTP request. 
 
 
-
-# Note for myself:
+### Note for myself:
 #### AccountController
 Provides a Web API endpoint for managing user accounts. The Register action is the only one that we used in this tutorial. Other methods on the class support password reset, social logins, and other functionality.
 #### ApplicationUser
