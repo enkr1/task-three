@@ -40,7 +40,7 @@ If you try to call the api without the token of a user account, access will be d
 
 ### Get Token from a user account:
 ![](images/p2.png)
-The access_token and token_type are the required values to process authorization.
+The access_token and token_type are the required values to proceed authorization.
 
 ### Call API with Token:
 ![](images/p2.png)
