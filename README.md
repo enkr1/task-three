@@ -34,9 +34,24 @@ Pang Jing Hui | P1845259
 
 
 ## Postman testing
+### Call API without Token:
+![](images/p1.png)
+If you try to call the api without the token of a user account, access will be denied.
+
+### Get Token from a user account:
+![](images/p2.png)
+The access_token and token_type are the required values to proceed authorization.
+
+### Call API with Token:
+![](images/p2.png)
+KEY = Authorization, VALUE = "token_type" + " " + "access_token"
+
+# Sequence Diagrams
+![](images/sd.jpeg)
+Example: The user is trying to login with name and password. The website sends these user credentials to the authorization server. The authorization server authenticates the credentials and returns an access token. To access a protected resource, the browser includes the access token in the Authorization header of the HTTP request. 
 
 
-# Note for myself:
+### Note for myself:
 #### AccountController
 Provides a Web API endpoint for managing user accounts. The Register action is the only one that we used in this tutorial. Other methods on the class support password reset, social logins, and other functionality.
 #### ApplicationUser
@@ -47,4 +62,5 @@ Defined in /App_Start/IdentityConfig.cs This class derives from UserManager and 
 This object plugs into the OWIN middleware, and processes events raised by the middleware. It derives from OAuthAuthorizationServerProvider.
 
 # References:
-https://www.youtube.com/watch?v=tbvxFW4UJdU
+1. http://mycsc.net/uncategorized/web-api-2-security-authentication-bearer-token-tutorial/
+2. https://www.youtube.com/watch?v=tbvxFW4UJdU
