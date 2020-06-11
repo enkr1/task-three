@@ -58,4 +58,4 @@ Defined in /App_Start/IdentityConfig.cs This class derives from UserManager and 
 This object plugs into the OWIN middleware, and processes events raised by the middleware. It derives from OAuthAuthorizationServerProvider.
 
 # References:
-https://www.youtube.com/watch?v=tbvxFW4UJdU
+1. https://www.youtube.com/watch?v=tbvxFW4UJdU
