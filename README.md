@@ -46,6 +46,9 @@ The access_token and token_type are the required values to process authorization
 ![](images/p2.png)
 KEY = Authorization, VALUE = "token_type" + " " + "access_token"
 
+# Sequence Diagrams
+
+
 
 # Note for myself:
 #### AccountController
