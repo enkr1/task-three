@@ -58,4 +58,5 @@ Defined in /App_Start/IdentityConfig.cs This class derives from UserManager and 
 This object plugs into the OWIN middleware, and processes events raised by the middleware. It derives from OAuthAuthorizationServerProvider.
 
 # References:
-1. https://www.youtube.com/watch?v=tbvxFW4UJdU
+1. http://mycsc.net/uncategorized/web-api-2-security-authentication-bearer-token-tutorial/
+2. https://www.youtube.com/watch?v=tbvxFW4UJdU
