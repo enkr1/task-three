@@ -1,6 +1,14 @@
 ﻿@section Scripts {
     @Scripts.Render("~/bundles/app")
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdLTAAVAAAAAHFEVWcfZQHyKzLA8aGNj0DjESZb"></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("register-form").submit();
+        }
+    </script>
+
 }
+
 <div class="row">
     <div class="col-sm-4">
         <form data-bind="submit: callApi">
@@ -21,8 +29,9 @@
             </div>
         </form>
     </div>
+
     <div class="col-sm-4">
-        <form id="form_id" data-bind="submit: register">
+        <form data-bind="submit: register">
             <h3>Register</h3>
             <div class="form-group">
                 <label>Email</label>
@@ -37,14 +46,20 @@
                 <input class="form-control" type="password" data-bind="value: registerPassword2" />
             </div>
             <div class="form-group">
-                <button class="g-recaptcha btn btn-default " data-sitekey="6LdLTAAVAAAAAHFEVWcfZQHyKzLA8aGNj0DjESZb"
-                        data-callback='onSubmit'
-                        onclick='checkRecaptcha()'>
+                <button 
+                        type="submit" 
+                        class="g-recaptcha btn btn-default" 
+                        
+                        @*data-callback='onSubmit' 
+                        data-sitekey="6LdLTAAVAAAAAHFEVWcfZQHyKzLA8aGNj0DjESZb" 
+                        data-action='submit'*@
+                        >
                     Register
                 </button>
             </div>
         </form>
-    </div>  
+    </div>
+
     <div class="col-sm-4">
         <h3>Log In</h3>
         <form data-bind="submit: login">
@@ -63,21 +78,3 @@
         </form>
     </div>
 </div>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src='https://www.google.com/recaptcha/api.js' async defer></script>
-
-<script>
-    function checkRecaptcha() {
-        var response = grecaptcha.getResponse();
-        if (response.length == 0) {
-            //reCaptcha not verified
-            alert("Invaild Recapcha");
-        }
-        else {
-            //reCaptch verified
-            alert("pass");
-            document.getElementById("form_id").submit();// Form submission
-        }
-    }
-
-</script>
