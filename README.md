@@ -18,31 +18,31 @@ Pang Jing Hui | P1845259
 | 11. | POST | api/Account/Register | Register a user account. |
 | 12. | POST | api/Account/RegisterExternal | Register a user account with external credentials. |
 
-## Testing from browser
-### Register a user account:
+## Browser testing
+### 1. Register a user account:
 ![](images/reg.png)
 
-### User account in local database:
+### 2. User account in local database:
 ![](images/db.png)
 
-### Login into a user account:
+### 3. Login into a user account:
 ![](images/log.png)
 
-### Call API:
+### 4. Call API:
 ![](images/call.png)
 
 
 
 ## Postman testing
-### Call API without Token:
+### 1. Call API without Token:
 ![](images/p1.png)
 If you try to call the api without the token of a user account, access will be denied.
 
-### Get Token from a user account:
+### 2. Get Token from a user account:
 ![](images/p2.png)
 The access_token and token_type are the required values to proceed authorization.
 
-### Call API with Token:
+### 3. Call API with Token:
 ![](images/p2.png)
 KEY = Authorization, VALUE = "token_type" + " " + "access_token"
 
